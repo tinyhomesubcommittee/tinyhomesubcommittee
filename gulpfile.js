@@ -4,7 +4,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 
 const input = './stylesheets/**/*.scss';
-const output = './public/css';
+const output = './css';
 const sassOptions = {
   errLogToConsole: true,
   outputStyle: 'expanded',
