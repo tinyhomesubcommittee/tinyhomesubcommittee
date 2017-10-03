@@ -1,6 +1,6 @@
 @import "bootstrap/bootstrap.scss";
 
-p {
+p, li {
   color: $gray;
   font-size: 18px;
   line-height: 34px;
@@ -12,7 +12,6 @@ p {
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 16px;
-    color: #9B9B9B;
     color: $gray-light;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -35,6 +34,26 @@ p {
   border-bottom: 1px solid $gray-lightest;
 }
 
+.section.section-blue {
+  background-color: $teal;
+
+  h2.section-header {
+    color: $gray-lightest;
+  }
+
+  h1 {
+    color: $yellow;
+  }
+
+  p {
+    color: $gray-lighter;
+  }
+}
+
+.section.section-yellow {
+  background-color: $yellow-light;
+}
+
 .read-more {
   position: absolute;
   left: 0px;
@@ -51,6 +70,73 @@ p {
     background: white;
     height: 50px;
     text-align: center;
+  }
+}
+
+.event-day {
+  h3 {
+    color: $yellow;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 0.1em;
+  }
+
+  h3.subtitle {
+    color: $gray-lighter;
+    margin-bottom: 0.5em;
+  }
+
+  img {
+    margin: 0px;
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.interested-list-item {
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  .bullet-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+
+    .bullet {
+      height: 50px;
+      width: 50px;
+      background-color: $teal;
+      text-align: center;
+      color: $yellow;
+      font-size: 24pt;
+      line-height: 50px;
+      vertical-align: middle;
+      border-radius: 25px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: $teal;
+      margin: 0px;
+      margin-left: 1em;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    color: $teal;
+  }
+
+  button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
