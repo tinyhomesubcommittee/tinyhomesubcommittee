@@ -34,7 +34,7 @@ p, li {
     text-align: justify;
   }
 
-  border-bottom: 1px solid $gray-lightest;
+  border-bottom: 1px solid $gray-lighter;
 }
 
 .section.section-blue {
@@ -51,10 +51,13 @@ p, li {
   p {
     color: $gray-lighter;
   }
+
+  border-bottom: none;
 }
 
 .section.section-yellow {
   background-color: $yellow-light;
+  border-bottom: none;
 }
 
 .read-more {
