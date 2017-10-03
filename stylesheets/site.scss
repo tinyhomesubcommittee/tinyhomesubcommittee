@@ -1,5 +1,9 @@
 @import "bootstrap/bootstrap.scss";
 
+h1, h2 {
+  color: $teal;
+}
+
 p, li {
   color: $gray;
   font-size: 18px;
@@ -18,7 +22,6 @@ p, li {
   }
 
   h1 {
-    color: $teal;
     font-size: 24px;
     line-height: 33px;
   }
@@ -122,7 +125,6 @@ p, li {
 
     h2 {
       font-size: 24px;
-      color: $teal;
       margin: 0px;
       margin-left: 1em;
     }
@@ -150,8 +152,6 @@ p, li {
     height: 200px;
     border-radius: 100px;
     border: 5px dotted $yellow;
-    // border-left: 5px solid $teal;
-    // border-right: 5px solid $teal;
     overflow: hidden;
 
     img {
@@ -162,7 +162,6 @@ p, li {
   }
 
   h1 {
-    color: $teal;
     margin: 0;
   }
 
@@ -177,6 +176,16 @@ p, li {
   }
 }
 
+.partner-logo {
+  margin-bottom: 1em;
+  img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 //Import sass fragments
 @import "site/header";
 @import "site/jumbotron";
+@import "site/footer";

@@ -1,0 +1,19 @@
+#footer {
+  background-color: $gray-dark;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    p {
+      color: $gray-light;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
