@@ -9,27 +9,54 @@
   <meta name="author" content="Alex Faber">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/site.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scroll.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <div id="header"  >
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
     <div class="container">
-      <img src="https://i.pinimg.com/736x/4c/a5/ff/4ca5ff157b88a90e2c1253d123f0f841--logodesign-geometric-designs.jpg"
-           height="50px"
-           width="50px"/>
-      <div class="links">
-        <a href="#">Home</a>
-        <a href="#">Event</a>
-        <button class="btn btn-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="https://i.pinimg.com/736x/4c/a5/ff/4ca5ff157b88a90e2c1253d123f0f841--logodesign-geometric-designs.jpg"
+             height="30px"
+             width="30px"/>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Home
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#welcome" onclick="respondToHashChange()">Welcome</a>
+              <a class="dropdown-item" href="#the-problem" onclick="respondToHashChange()">The Problem</a>
+              <a class="dropdown-item" href="#our-proposal" onclick="respondToHashChange()">Our Proposal</a>
+              <a class="dropdown-item" href="#the-event" onclick="respondToHashChange()">The Event</a>
+              <a class="dropdown-item" href="#support" onclick="respondToHashChange()">Support</a>
+              <a class="dropdown-item" href="#about-us" onclick="respondToHashChange()">About Us</a>
+              <a class="dropdown-item" href="#the-team" onclick="respondToHashChange()">The Team</a>
+              <a class="dropdown-item" href="#our-partners" onclick="respondToHashChange()">Our Partners</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Event</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary align-middle" style="height: 40px; align-self: center;">
           Subscribe to email list
         </button>
       </div>
     </div>
-  </div>
-  <div id="jumbotron">
+  </nav>
+  <div id="welcome-link" style="margin-top: 40px;">
     <div class="background-cover"></div>
     <div class="container">
       <h2 class="learn">Learn about</h2>
@@ -38,7 +65,7 @@
       <h1 class="date">October <b>26th</b>, <b>27th</b>, and <b>28th</b> 2017
     </div>
   </div>
-  <div class="container">
+  <div id="the-problem-link" class="container">
     <div class="row section">
       <div class="col-md-6">
         <h2 class="section-header">The problem</h2>
@@ -67,6 +94,8 @@
              width="100%"/>
       </div>
     </div>
+  </div>
+  <div id="our-proposal-link" class="container">
     <div class="row section">
       <div class="col-12">
         <h2 class="section-header">Our proposal</h2>
@@ -95,7 +124,7 @@
       </div>
     </div>
   </div>
-  <div class="section section-blue">
+  <div id="the-event-link" class="section section-blue">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -140,7 +169,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div id="support-link" class="container">
     <div class="row section">
       <div class="col-12">
         <h1 style="margin-top: 1em;">
@@ -211,7 +240,7 @@
       </div>
     </div>
   </div>
-  <div class="section section-yellow">
+  <div id="about-us-link" class="section section-yellow">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -245,7 +274,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div id="the-team-link" class="container">
     <div class="row section">
       <div class="col-12">
         <h2 class="section-header">The team</h2>
@@ -295,6 +324,8 @@
         </p>
       </div>
     </div>
+  </div>
+  <div id="our-partners-link"  class="container">
     <div class="row section">
       <div class="col-12">
         <h2 class="section-header">Our partners</h2>
