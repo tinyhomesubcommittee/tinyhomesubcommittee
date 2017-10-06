@@ -40,7 +40,7 @@
 }
 
 @include media-breakpoint-down(md) {
-  #jumbotron {
+  #welcome-link {
     min-height: 250px;
 
     .background-cover {
