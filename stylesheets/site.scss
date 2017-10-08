@@ -1,5 +1,9 @@
 @import "bootstrap/bootstrap.scss";
 
+a.secondary {
+  color: $yellow;
+}
+
 h1, h2 {
   color: $teal;
 }
@@ -104,7 +108,7 @@ nav .navbar-nav .nav-item > a.nav-link {
 
   img {
     margin: 0px;
-    max-height: 150px;
+    max-height: 170px;
 
     @include media-breakpoint-down(sm) {
       align-self: center;
@@ -126,7 +130,7 @@ nav .navbar-nav .nav-item > a.nav-link {
       flex-direction: column;
     }
 
-    p {
+    div {
       margin-left: 1em;
 
       @include media-breakpoint-down(sm) {
@@ -212,7 +216,7 @@ nav .navbar-nav .nav-item > a.nav-link {
 
 .partner-logo {
   margin-bottom: 1em;
-  
+
   img {
     width: 100%;
     margin: 0;
