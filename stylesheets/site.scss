@@ -88,29 +88,51 @@ nav .navbar-nav .nav-item > a.nav-link {
 }
 
 .event-day {
+  margin-top: 1em;
+
   h3 {
     color: $yellow;
     font-size: 20px;
     line-height: 27px;
-    text-align: center;
     margin-bottom: 0.1em;
   }
 
   h3.subtitle {
     color: $gray-lighter;
     margin-bottom: 0.5em;
-    min-height: 54px;
   }
 
   img {
     margin: 0px;
-    margin-bottom: 0.5em;
-    width: 100%;
+    max-height: 150px;
+
+    @include media-breakpoint-down(sm) {
+      align-self: center;
+      margin-bottom: 1em;
+    }
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
+  }
+
+  .event-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+
+    p {
+      margin-left: 1em;
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+      }
+    }
   }
 }
 
@@ -190,6 +212,7 @@ nav .navbar-nav .nav-item > a.nav-link {
 
 .partner-logo {
   margin-bottom: 1em;
+  
   img {
     width: 100%;
     margin: 0;
