@@ -3,7 +3,7 @@ function getNavHeight() {
 }
 
 function hashToSectionId(hash) {
-  return hash === '' ? '#welcome-link' : hash + '-link';
+  return hash === '' ? '#constuction' : hash + '-link';
 }
 
 function hashToMenuItemId(hash) {
